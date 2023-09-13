@@ -6,7 +6,7 @@ p {
     text-align: center;
   }
 
-  <style>
+  
 body {margin:0;}
 
 .navbar {
@@ -37,12 +37,5 @@ body {margin:0;}
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
-</style>
-</head>
-<body>
 
-<div class="navbar">
-  <a href="#Home">Home</a>
-  <a href="#Binairstelsel">Binairstelsel</a>
-  <a href="#kleurmodellen">kleurmodellen</a>
-</div>
+
