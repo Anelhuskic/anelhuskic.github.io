@@ -6,19 +6,21 @@ p {
     text-align: left;
   }
 
- ul {
+/* Stijlen voor de ongeordende lijst */
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
-
 }
 
+/* Stijlen voor de lijstitems */
 li {
   float: left;
 }
 
+/* Stijlen voor de ankertags binnen de lijstitems */
 li a {
   display: block;
   color: black;
@@ -26,10 +28,15 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+/* Stijlen voor hover-effecten (wanneer de muis erover zweeft) */
 li a:hover:not(.active) {
-  background-color: white;
+  background-color: #f2f2f2; /* Verander de achtergrondkleur wanneer er overheen wordt gehoverd */
 }
 
+/* Stijlen voor het actieve menu-item */
 .active {
   background-color: white;
-} 
+  color: blue; /* Optioneel: verander de tekstkleur van het actieve item */
+}
+
