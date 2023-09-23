@@ -8,11 +8,16 @@
     <style>
         body {
             background-color: rgba(255, 0, 64);
+            text-align: center; /* Center de inhoud van het <body>-element */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Zorgt ervoor dat de inhoud de volledige hoogte van het scherm inneemt */
         }
 
         h1 {
             color: white;
-            text-align: center;
         }
 
         p {
@@ -23,9 +28,11 @@
 
         img {
             width: 50%;
-            height: 50%;
-            display: block;
-            margin: 0 auto;
+            height: auto;
+        }
+
+        table {
+            margin-left: 20px; /* Ruimte tussen de tabel en de afbeelding */
         }
 
         ul {
@@ -41,6 +48,7 @@
 
         a {
             font-size: 18px;
+            color: white;
         }
     </style>
 </head>
@@ -81,3 +89,4 @@
 
 </body>
 </html>
+
