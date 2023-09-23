@@ -6,44 +6,30 @@ p {
     text-align: left;
   }
 
-  <style>
-  body {margin:0;}
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  .main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
-  }
-  </style>
-  </head>
-  <body>
-  
-  <div class="navbar">
-    <a href="#index">Home</a>
-    <a href="#binairstelsel">Binair stelsel</a>
-    <a href="#kleurmodellen">kleurmodellen</a>
-  </div>
-  
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: white;
+} 
