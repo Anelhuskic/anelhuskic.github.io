@@ -1,70 +1,108 @@
 
-<!DOCTYPE html> 
-<html> 
-    <head>
-       <title>Kampioen</title>
-       <link rel="stylesheet" type="text/css" href="opmaak.css"
-       <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kampioen</title>
+    <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <style>
+        body {
+            background-color: rgba(255, 0, 64);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 16px;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        table {
+            margin-left: 20px;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <style>
-    body {
 
-      background-color: rgba(255, 0, 64);
+<h1>Eredivisie</h1>
+<p>Feyenoord is in het seizoen 2022/2023 gekroond tot landskampioen van Nederland. De club uit Rotterdam eindigde uiteindelijk met 82 punten bovenaan de ranglijst. Het was de eerste landstitel sinds 6 jaar. De doelpuntenmaker van de club, Santiago Gimenez zie je hieronder. Hij eindigde het seizoen met 15 competitiedoelpunten. De beste speler uit de Eredivisie was de vanaf-jeugd-gemaakte aanvoerder van Feyenoord, Orkun Köcku.  </p>
 
-    }
-    
-    h1 {
-      color: white;
-      text-align: center;
-    }
-    
-    p {
-      font-family: verdana;
-      font-size: 16px;
-      color: white;
-    }
+<div class="content">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+    </ul>
 
-    img {
-        width: 50%;
-        height: 50%;
-        display: block;
-        margin: 0 auto;
-      }
-    </style>
-    </head>
-    <body>
-    
-    <h1>Eredivisie</h1>
-    <p>Feyenoord is in het seizoen 2022/2023 gekroond tot landskampioenvan Nederland. De club uit Rotterdam eindigde uiteindelijk met 82 punten bovenaan de ranglijst. Het was de eerste landstitel sinds 6 jaar. De doelpuntenmaker van de club, Santiago Gimenez zie je hieronder. Hij eindigde het seizoen met 15 competitie doelpunten. De beste speler uit de Eredivisie was de vanaf-jeugd-gemaakte aanvoerder van Feyenoord, Orkun Köcku.  </p>
-
-    <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-      li {
-        display: inline;
-        margin-right: 20px;
-      }
-      
-      a {
-        font-size: 18px;
-      }
-      </style>
-    
-
-<br>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="binairstelsel.html">Binair stelsel</a></li>
-  <li><a href="kleurmodellen.html">kleurmodellen</a></li>
-  </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Decimaal</th>
+                <th>ASCII-karakter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>32</td>
+                <td>spatie</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>!</td>
+            </tr>
+            <!-- Voeg meer rijen toe voor andere ASCII-karakters -->
+        </tbody>
+    </table>
+</div>
 
 <img src="kampioen eredivisie.jpg" alt="Deze site is nog niet af">
 
-  </body>
+</body>
 </html>
 
