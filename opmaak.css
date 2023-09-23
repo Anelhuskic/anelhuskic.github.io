@@ -6,21 +6,23 @@ p {
     text-align: left;
   }
 
-/* Stijlen voor de ongeordende lijst */
+/* Stijlen voor het menu */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
+  position: fixed; /* Maak het menu vast bovenaan de pagina */
+  top: 0; /* Plaats het menu helemaal bovenaan */
+  width: 100%; /* Maak het menu 100% breed */
+  z-index: 2; /* Zorg ervoor dat het menu boven andere elementen wordt weergegeven */
 }
 
-/* Stijlen voor de lijstitems */
 li {
   float: left;
 }
 
-/* Stijlen voor de ankertags binnen de lijstitems */
 li a {
   display: block;
   color: black;
@@ -29,14 +31,21 @@ li a {
   text-decoration: none;
 }
 
-/* Stijlen voor hover-effecten (wanneer de muis erover zweeft) */
 li a:hover:not(.active) {
-  background-color: #f2f2f2; /* Verander de achtergrondkleur wanneer er overheen wordt gehoverd */
+  background-color: #f2f2f2;
 }
 
-/* Stijlen voor het actieve menu-item */
 .active {
   background-color: white;
-  color: blue; /* Optioneel: verander de tekstkleur van het actieve item */
 }
+
+/* Stijlen voor de titel van de website */
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px; /* Voeg een bovenmarge toe om ruimte te maken voor het menu */
+}
+
+/* Voeg andere stijlen toe voor de rest van je inhoud */
+
 
