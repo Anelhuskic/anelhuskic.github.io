@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(255, 0, 0, 0.614)
+  background-color: rgba(255, 0, 0, 0.614);
   position: fixed; /* Maak het menu vast bovenaan de pagina */
   top: 0; /* Plaats het menu helemaal bovenaan */
   width: 100%; /* Maak het menu 100% breed */
