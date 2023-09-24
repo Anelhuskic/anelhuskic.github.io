@@ -55,3 +55,8 @@ h1 {
 /* Voeg andere stijlen toe voor de rest van je inhoud */
 
 
+h2 {
+  color: white;
+  text-align: center;
+}
+
