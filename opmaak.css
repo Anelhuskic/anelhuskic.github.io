@@ -66,3 +66,11 @@ h3 {
   color: white;
   text-align: center;
 }
+
+/* CSS voor de iframe-container */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
