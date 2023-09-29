@@ -75,7 +75,7 @@ h3 {
 }
 
 footer {
-  background-color: #FF0000; /* Rode achtergrondkleur */
+  background-color: #ff0000; /* Rode achtergrondkleur */
   color: #FFFFFF; /* Witte tekstkleur */
   padding: 20px; /* Ruimte rondom de inhoud in de footer */
   text-align: center; /* Tekst gecentreerd in de footer */
