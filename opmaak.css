@@ -1,14 +1,5 @@
-
-  /* Algemene stijlen */
-
-body {
-    background-color: rgb(255, 0, 64);
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-/* Stijl voor paragrafen (p) */
-p {
+ /* Stijl voor paragrafen (p) */
+ p {
     border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
     outline: red; /* Rode rand rondom de focus van het element */
     margin: auto; /* Horizontaal centreren */
@@ -17,7 +8,7 @@ p {
 }
 
 /* Stijlen voor het navigatiemenu */
-ul.nav-menu {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,16 +20,16 @@ ul.nav-menu {
     z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
 }
 
-ul.nav-menu li {
+li {
     float: left; /* Lijstitems naast elkaar plaatsen */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
 }
 
-ul.nav-menu li:last-child {
+li:last-child {
     border-right: none; /* Geen rechterrand voor het laatste menu-item */
 }
 
-ul.nav-menu li a {
+li a {
     display: block;
     color: white; /* Witte tekstkleur */
     text-align: center;
@@ -46,18 +37,30 @@ ul.nav-menu li a {
     text-decoration: none;
 }
 
-ul.nav-menu li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
 }
 
-ul.nav-menu .active {
+.active {
     background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
 }
 
 /* Stijl voor de titel van de website */
 h1 {
+    color: white;
     text-align: center;
     margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+}
+
+/* Aanvullende stijlen voor andere koppen */
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
 }
 
 /* CSS voor de iframe-container */
@@ -75,5 +78,8 @@ footer {
     text-align: center; /* Tekst gecentreerd in de footer */
     font-style: italic; /* Cursieve tekst */
 }
+</style>
 
+</head>
+<body>
     
