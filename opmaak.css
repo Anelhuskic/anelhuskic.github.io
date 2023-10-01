@@ -1,6 +1,6 @@
  
-   /* Tekststijl voor alinea's (p) */
-   p {
+ /* Stijl voor paragrafen (p) */
+ p {
     border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
     outline: red; /* Rode rand rondom de focus van het element */
     margin: auto; /* Horizontaal centreren */
@@ -46,8 +46,20 @@ li a:hover:not(.active) {
     background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
 }
 
+/* Stijl voor de titel van de website */
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+}
+
 /* Aanvullende stijlen voor andere koppen */
-h2, h3 {
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
     color: white;
     text-align: center;
 }
@@ -68,6 +80,7 @@ footer {
     font-style: italic; /* Cursieve tekst */
 }
 </style>
+
 </head>
 <body>
     
