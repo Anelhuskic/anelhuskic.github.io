@@ -2,28 +2,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Definieer de tekenset van het document als UTF-8 -->
     <meta charset="utf-8">
+    <!-- De titel die in de browserbalk wordt weergegeven -->
     <title>Compressie</title>
+    <!-- Koppeling naar een extern CSS-bestand genaamd "opmaak.css" -->
     <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <!-- Begin van de interne CSS-stijlen voor de pagina -->
     <style>
-        /* Achtergrondkleur van de pagina instellen */
-        body {
+         /* Achtergrondkleur van de pagina instellen */
+         body {
             background-color: rgb(255, 0, 64);
         }
-        
+
         /* Tekststijl voor de hoofdkop (h1) */
         h1 {
             color: white;
             text-align: center;
         }
-        
+
         /* Tekststijl voor alinea's (p) */
         p {
             font-family: verdana;
             font-size: 16px;
             color: white;
         }
-        
+
         /* Stijl voor afbeeldingen (img) */
         img {
             width: 50%;
@@ -31,7 +35,26 @@
             display: block;
             margin: 0 auto;
         }
+        
+        /* Stijl voor het navigatiemenu */
+        ul {
+            list-style-type: none;
+            margin:  0;
+            padding: 0;
+        }
+
+        /* Stijl voor de lijstitems (li) in het menu */
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Stijl voor koppelingen (a) in het menu */
+        a {
+            font-size: 18px;
+        }
     </style>
+    <!-- Einde van de interne CSS-stijlen -->
 </head>
 <body>
     <!-- Hoofdkop (h1) voor de pagina -->
@@ -51,28 +74,6 @@
     <!-- Derde alinea (p) -->
     <p>Bij lossy compressie wordt de bestandsgrootte verkleind door bepaalde informatie opzettelijk te verwijderen. Dit resulteert in een verlies van gegevenskwaliteit, maar de mate van verlies kan worden gecontroleerd door de compressie-instellingen aan te passen. Lossy compressie wordt vaak gebruikt voor media zoals afbeeldingen, audio en video.</p>
 
-    <!-- Begin van de interne CSS-stijlen voor het navigatiemenu -->
-    <style>
-        /* Stijl voor de ongeordende lijst (ul) */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Stijl voor de lijstitems (li) in het menu */
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-        
-        /* Stijl voor koppelingen (a) in het menu */
-        a {
-            font-size: 18px;
-        }
-    </style>
-    <!-- Einde van de interne CSS-stijlen voor het navigatiemenu -->
-
     <!-- Navigatiemenu met koppelingen naar andere pagina's -->
     <ul class="nav menu">
         <li><a href="index.html">Home</a></li>
@@ -87,7 +88,7 @@
     <!-- Een afbeelding met een bron (src-attribuut) (img) -->
     <img src="foto-bestanden-comprimeren.jpg" alt="nog niet af">
 
-    <!-- Footersectie voor het auteursrecht (footer) -->
+    <!-- Voettekst van de pagina -->
     <footer>
           <div class="footer-content">
             <!-- Copyrightinformatie -->
