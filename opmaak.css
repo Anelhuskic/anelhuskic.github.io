@@ -69,7 +69,8 @@ h3 {
     display: flex;
     justify-content: center; /* Horizontaal centreren */
     align-items: center; /* Verticaal centreren */
-    min-height: 40vh; /* Minimale hoogte van de container, in dit geval 70% van de viewport hoogte */
+    min-height: 70vh; /* Minimale hoogte van de container, in dit geval 70% van de viewport hoogte */
+    z-index: -1; /* Verlaag de z-index om ervoor te zorgen dat de tekst erboven wordt weergegeven */
 }
 
 
