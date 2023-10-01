@@ -60,11 +60,6 @@ h1 {
     margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
 }
 
-/* Aanvullende stijlen voor andere koppen */
-h2, h3 {
-    text-align: center;
-}
-
 /* CSS voor de iframe-container */
 .iframe-container {
     display: flex;
