@@ -1,86 +1,84 @@
 
-  /* Stijl voor paragrafen (p) */
-        p {
-            border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
-            outline: red; /* Rode rand rondom de focus van het element */
-            margin: auto; /* Horizontaal centreren */
-            padding: 9px; /* Ruimte binnenin het element */
-            text-align: left; /* Tekst uitlijnen naar links */
-        }
+  /* Algemene stijlen */
 
-        /* Stijlen voor het navigatiemenu */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
-            position: fixed; /* Menu vast bovenaan de pagina */
-            top: 0; /* Plaats het menu helemaal bovenaan */
-            width: 100%; /* Breedte van het menu */
-            z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
-        }
+body {
+    background-color: rgb(255, 0, 64);
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-        li {
-            float: left; /* Lijstitems naast elkaar plaatsen */
-            border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
-        }
+/* Stijl voor paragrafen (p) */
+p {
+    border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
+    outline: red; /* Rode rand rondom de focus van het element */
+    margin: auto; /* Horizontaal centreren */
+    padding: 9px; /* Ruimte binnenin het element */
+    text-align: left; /* Tekst uitlijnen naar links */
+}
 
-        li:last-child {
-            border-right: none; /* Geen rechterrand voor het laatste menu-item */
-        }
+/* Stijlen voor het navigatiemenu */
+ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
+    position: fixed; /* Menu vast bovenaan de pagina */
+    top: 0; /* Plaats het menu helemaal bovenaan */
+    width: 100%; /* Breedte van het menu */
+    z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
+}
 
-        li a {
-            display: block;
-            color: white; /* Witte tekstkleur */
-            text-align: center;
-            padding: 14px 16px; /* Ruimte binnenin menu-items */
-            text-decoration: none;
-        }
+ul.nav-menu li {
+    float: left; /* Lijstitems naast elkaar plaatsen */
+    border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
+}
 
-        li a:hover:not(.active) {
-            background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
-        }
+ul.nav-menu li:last-child {
+    border-right: none; /* Geen rechterrand voor het laatste menu-item */
+}
 
-        .active {
-            background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
-        }
+ul.nav-menu li a {
+    display: block;
+    color: white; /* Witte tekstkleur */
+    text-align: center;
+    padding: 14px 16px; /* Ruimte binnenin menu-items */
+    text-decoration: none;
+}
 
-        /* Stijl voor de titel van de website */
-        h1 {
-            color: white;
-            text-align: center;
-            margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
-        }
+ul.nav-menu li a:hover:not(.active) {
+    background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
+}
 
-        /* Aanvullende stijlen voor andere koppen */
-        h2 {
-            color: white;
-            text-align: center;
-        }
+ul.nav-menu .active {
+    background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
+}
 
-        h3 {
-            color: white;
-            text-align: center;
-        }
+/* Stijl voor de titel van de website */
+h1 {
+    text-align: center;
+    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+}
 
-        /* CSS voor de iframe-container */
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/* Aanvullende stijlen voor andere koppen */
+h2, h3 {
+    text-align: center;
+}
 
-        /* Stijlen voor de footer */
-        footer {
-            background-color: #ff0000; /* Rode achtergrondkleur */
-            color: #FFFFFF; /* Witte tekstkleur */
-            padding: 20px; /* Ruimte rondom de inhoud in de footer */
-            text-align: center; /* Tekst gecentreerd in de footer */
-            font-style: italic; /* Cursieve tekst */
-        }
-    </style>
+/* CSS voor de iframe-container */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    </head>
-<body>
+/* Stijlen voor de footer */
+footer {
+    background-color: #ff0000; /* Rode achtergrondkleur */
+    color: #FFFFFF; /* Witte tekstkleur */
+    padding: 20px; /* Ruimte rondom de inhoud in de footer */
+    text-align: center; /* Tekst gecentreerd in de footer */
+    font-style: italic; /* Cursieve tekst */
+}
+
     
