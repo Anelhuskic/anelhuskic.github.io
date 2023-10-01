@@ -14,20 +14,20 @@
         body {
             background-color: rgb(255, 0, 64);
         }
-        
+
         /* Tekststijl voor de hoofdkop (h1) */
         h1 {
             color: white;
             text-align: center;
         }
-        
+
         /* Tekststijl voor alinea's (p) */
         p {
             font-family: verdana;
             font-size: 16px;
             color: white;
         }
-        
+
         /* Stijl voor afbeeldingen (img) */
         img {
             width: 50%;
@@ -35,7 +35,26 @@
             display: block;
             margin: 0 auto;
         }
+        
+        /* Stijl voor het navigatiemenu */
+        ul {
+            list-style-type: none;
+            margin:  0;
+            padding: 0;
+        }
+
+        /* Stijl voor de lijstitems (li) in het menu */
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Stijl voor koppelingen (a) in het menu */
+        a {
+            font-size: 18px;
+        }
     </style>
+    <!-- Einde van de interne CSS-stijlen -->
 </head>
 <body>
     <!-- Hoofdkop (h1) voor de pagina -->
@@ -49,31 +68,9 @@
     <!-- Tweede alinea (p) -->
     <p>Bitmap en vectorafbeeldingen worden opgeslagen in bestandformaten. Bitmapafbeeldingen bestaan uit een raster of een rooster van kleine individuele pixels. Elke pixel heeft een specifieke kleurwaarde en positie, wat resulteert in een gedetailleerde weergave van een afbeelding. Voorbeelden van bitmapindelingen zijn JPEG, PNG en BMP. Vectorafbeeldingen worden gemaakt met behulp van wiskundige vergelijkingen en punten (vectoren) in plaats van pixels. Ze zijn gebaseerd op objecten en paden en kunnen zonder kwaliteitsverlies worden vergroot of verkleind omdat ze opnieuw worden berekend op basis van de vergrotingsfactor. Voorbeelden van vectorindelingen zijn SVG (Scalable Vector Graphics) en AI (Adobe Illustrator). Vectorafbeeldingen zijn ideaal voor logo's, illustraties en grafische ontwerpen.</p>
     
-    <!-- Koppeling naar een externe video (p) -->
+    <!-- Koppeling naar een Youtube video (p) -->
     <p><a href="https://www.youtube.com/watch?v=VVdmmN0su6E">Heb je behoefte aan nog meer uitleg over bestandsformaten? Of snap je het nog niet? Check dan deze video (in het Engels).</a></p>
-    
-    <!-- Begin van de interne CSS-stijlen voor het navigatiemenu -->
-    <style>
-        /* Stijl voor de ongeordende lijst (ul) */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Stijl voor de lijstitems (li) in het menu */
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-        
-        /* Stijl voor koppelingen (a) in het menu */
-        a {
-            font-size: 18px;
-        }
-    </style>
-    <!-- Einde van de interne CSS-stijlen voor het navigatiemenu -->
-
+     
     <!-- Navigatiemenu met koppelingen naar andere pagina's -->
     <ul class="nav menu">
         <li><a href="index.html">Home</a></li>
