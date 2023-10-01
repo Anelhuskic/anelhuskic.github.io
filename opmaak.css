@@ -67,8 +67,9 @@ h3 {
 /* CSS voor de iframe-container */
 .iframe-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    height: 70vh; /* Hiermee bepaal je de hoogte van de container, in dit geval 70% van de viewport hoogte */
 }
 
 /* Stijlen voor de footer */
