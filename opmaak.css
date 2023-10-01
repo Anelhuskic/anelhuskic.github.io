@@ -69,8 +69,9 @@ h3 {
     display: flex;
     justify-content: center; /* Horizontaal centreren */
     align-items: center; /* Verticaal centreren */
-    height: 70vh; /* Hiermee bepaal je de hoogte van de container, in dit geval 70% van de viewport hoogte */
+    min-height: 70vh; /* Minimale hoogte van de container, in dit geval 70% van de viewport hoogte */
 }
+
 
 /* Stijlen voor de footer */
 footer {
