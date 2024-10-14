@@ -24,17 +24,54 @@
             color: white;
         }
 
-        /* Stijl voor afbeeldingen (img) */
-        img {
-            width: 50%;
-            height: 50%;
+        /* Stijl voor het navigatiemenu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 15px;
+        }
+
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            background-color: rgb(64, 64, 64);
+        }
+
+        /* Second level menu */
+        .second-level-menu, .third-level-menu {
+            display: none;
+            position: absolute;
+            background-color: rgb(255, 0, 64);
+            top: 100%;
+            padding: 10px;
+        }
+
+        li:hover > .second-level-menu, li:hover > .third-level-menu {
             display: block;
-            margin: 0 auto;
+        }
+
+        /* Zorg ervoor dat de derde laag naast de fysieke laag verschijnt */
+        .third-level-menu {
+            top: 0;
+            left: 100%;
+        }
+
+        /* Stijl submenu items */
+        .second-level-menu li, .third-level-menu li {
+            display: block;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    
     <ul class="top-level-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
@@ -55,10 +92,8 @@
                 <li><a href="Toepassingslaag.html">Toepassingslaag</a></li>
             </ul>
         </li>
+        <li><a href="Compressie.html">Compressie</a></li>
     </ul>
- </li>
- <li><a href="Compressie.html">Compressie</a></li>
-</ul>
 
     <h1>Het drielagenmodel</h1>
     <p>Dit is een korte uitleg over het drielagenmodel in de computerarchitectuur.</p>
@@ -70,9 +105,9 @@
             <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
         </div>
     </footer>
-
 </body>
 </html>
+
 
 
 
