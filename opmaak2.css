@@ -31,6 +31,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    clear: both;
 }
 
 .top-level-menu > li
@@ -70,6 +71,7 @@ h1 {
     color: white;
     text-align: center;
     margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+    clear: both;
 }
 
 /* Aanvullende stijlen voor andere koppen */
