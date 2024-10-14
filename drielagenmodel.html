@@ -6,72 +6,110 @@
     <title>Computerarchitectuur</title>
     <link rel="stylesheet" type="text/css" href="opmaak2.css">
     <style>
-        /* Achtergrondkleur van de pagina instellen */
+        /* Algemene body-styling */
         body {
             background-color: rgb(255, 0, 64);
-        }
-
-        /* Tekststijl voor de hoofdkop (h1) */
-        h1 {
-            color: white;
-            text-align: center;
-        }
-
-        /* Tekststijl voor alinea's (p) */
-        p {
             font-family: verdana;
-            font-size: 16px;
-            color: white;
-        }
-
-        /* Stijl voor het navigatiemenu */
-        ul {
-            list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
-        li {
-            display: inline-block;
-            position: relative;
-            margin-right: 15px;
-        }
-
-        a {
-            font-size: 16px;
-            text-decoration: none;
-            color: white;
-            padding: 5px 10px;
+        /* Stijl voor de navigatiebalk */
+        .top-level-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center; /* Menu-items in het midden uitlijnen */
             background-color: rgb(64, 64, 64);
         }
 
-        /* Second level menu */
+        .top-level-menu li {
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+        }
+
+        .top-level-menu li a {
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: inline-block;
+            background-color: rgb(64, 64, 64);
+        }
+
+        .top-level-menu li a:hover {
+            background-color: rgb(100, 100, 100);
+        }
+
+        /* Dropdown-styling voor tweede en derde niveau */
         .second-level-menu, .third-level-menu {
             display: none;
             position: absolute;
-            background-color: rgb(255, 0, 64);
+            background-color: rgb(64, 64, 64);
+            padding: 0;
+            margin: 0;
             top: 100%;
-            padding: 10px;
         }
 
         li:hover > .second-level-menu, li:hover > .third-level-menu {
             display: block;
         }
 
-        /* Zorg ervoor dat de derde laag naast de fysieke laag verschijnt */
-        .third-level-menu {
-            top: 0;
-            left: 100%;
-        }
-
-        /* Stijl submenu items */
         .second-level-menu li, .third-level-menu li {
             display: block;
             margin: 0;
         }
+
+        .third-level-menu {
+            left: 100%; /* Zorgt ervoor dat het derde menu naast het tweede komt */
+            top: 0;
+        }
+
+        .second-level-menu li a, .third-level-menu li a {
+            padding: 10px 15px;
+            white-space: nowrap;
+        }
+
+        /* Stijl voor de titel (h1) */
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        /* Stijl voor alinea's (p) */
+        p {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%; /* Breedte van de tekst centreren */
+        }
+
+        /* Stijl voor afbeeldingen (img) */
+        img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Stijl voor de voettekst */
+        footer {
+            background-color: rgb(64, 64, 64);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    <!-- Top-level menu -->
     <ul class="top-level-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
@@ -79,6 +117,7 @@
         <li><a href="Uitleg over het Binairstelsel.html">Binairstelsel</a></li>
         <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
         <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+        <li><a href="Compressie.html">Compressie</a></li>
         <li>
             <a href="drielagenmodel.html">Drielagenmodel</a>
             <ul class="second-level-menu">
@@ -92,21 +131,24 @@
                 <li><a href="Toepassingslaag.html">Toepassingslaag</a></li>
             </ul>
         </li>
-        <li><a href="Compressie.html">Compressie</a></li>
     </ul>
 
+    <!-- Titel onder het menu -->
     <h1>Het drielagenmodel</h1>
+
+    <!-- Inhoud van de pagina -->
     <p>Dit is een korte uitleg over het drielagenmodel in de computerarchitectuur.</p>
 
-    <img src="Foto_over_computerarchitectuur.jpg" alt="nog niet af">
+    <!-- Afbeelding -->
+    <img src="Foto_over_computerarchitectuur.jpg" alt="Afbeelding van computerarchitectuur">
 
+    <!-- Voettekst -->
     <footer>
-        <div class="footer-content">
-            <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
-        </div>
+        <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
     </footer>
 </body>
 </html>
+
 
 
 
