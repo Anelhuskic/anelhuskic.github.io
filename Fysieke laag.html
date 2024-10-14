@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Definieer de tekenset van het document als UTF-8 -->
     <meta charset="utf-8">
-    <!-- De titel die in de browserbalk wordt weergegeven -->
     <title>Fysieke Laag</title>
-    <!-- Koppeling naar een extern CSS-bestand genaamd "opmaak.css" -->
     <link rel="stylesheet" type="text/css" href="opmaak.css">
-    <!-- Begin van de interne CSS-stijlen voor de pagina -->
     <style>
          /* Achtergrondkleur van de pagina instellen */
          body {
@@ -38,41 +34,60 @@
         /* Stijl voor het navigatiemenu */
         ul {
             list-style-type: none;
-            margin:  0;
+            margin: 0;
             padding: 0;
         }
 
         /* Stijl voor de lijstitems (li) in het menu */
         li {
-            display: inline;
-            margin-right: 20px;
+            display: inline-block; /* Gebruik inline-block voor betere controle */
+            margin-right: 15px; /* Ruimte tussen menu-items */
+            position: relative; /* Voor absolute positionering van submenu's */
         }
 
         /* Stijl voor koppelingen (a) in het menu */
         a {
-            font-size: 18px;
+            font-size: 16px; /* Kleinere tekstgrootte */
+            text-decoration: none; /* Geen onderstreping */
+            color: white; /* Kleur van de tekst */
+            padding: 5px 10px; /* Ruimte rond de tekst */
+        }
+
+        /* Dropdown-menu */
+        .second-level-menu,
+        .third-level-menu {
+            display: none; /* Verberg dropdown-menu's standaard */
+            position: absolute; /* Absoluut positioneren */
+            background-color: rgb(255, 0, 64); /* Achtergrondkleur van het dropdown-menu */
+            padding: 10px; /* Ruimte binnen het menu */
+            z-index: 1000; /* Zorg ervoor dat het menu boven andere elementen staat */
+        }
+
+        /* Weergeven van het dropdown-menu bij hover */
+        li:hover .second-level-menu,
+        li:hover .third-level-menu {
+            display: block; /* Toon het dropdown-menu */
+        }
+
+        /* Stijl voor submenu-items */
+        .second-level-menu li,
+        .third-level-menu li {
+            display: block; /* Zorg ervoor dat submenu-items onder elkaar staan */
+            margin: 0; /* Geen extra marge */
         }
     </style>
-    <!-- Einde van de interne CSS-stijlen -->
 </head>
 <body>
-    <!-- Hoofdkop (h1) voor de pagina -->
     <h1>Fysieke Laag</h1>
-    
-    <!-- Hier komt de inhoud over compressie -->
-    
-    <!-- Eerste alinea (p) -->
+
     <p>Compressie is het proces van het verkleinen van de bestandsgrootte van gegevens zonder verlies van essentiële informatie. Het wordt vaak gebruikt om gegevens efficiënter op te slaan en over te dragen. Compressie kan worden toegepast op verschillende soorten gegevens, waaronder tekst, afbeeldingen, audio en video. Er zijn twee hoofdtypen compressie:</p>
      
-    <!-- Eerste subkop (h1) -->
     <h1>Lossless- en Lossy Compressie</h1>
-    
-    <!-- Tweede alinea (p) -->
+
     <p>Bij lossless compressie wordt de bestandsgrootte verkleind zonder enig verlies van gegevenskwaliteit. Dit betekent dat wanneer de gecomprimeerde gegevens worden gedecomprimeerd, ze identiek zijn aan de oorspronkelijke gegevens. Lossless compressie wordt vaak gebruikt voor gegevens zoals tekstbestanden, spreadsheets en bepaalde afbeeldingsformaten zoals PNG en TIFF.</p>
     
-    <!-- Derde alinea (p) -->
     <p>Bij lossy compressie wordt de bestandsgrootte verkleind door bepaalde informatie opzettelijk te verwijderen. Dit resulteert in een verlies van gegevenskwaliteit, maar de mate van verlies kan worden gecontroleerd door de compressie-instellingen aan te passen. Lossy compressie wordt vaak gebruikt voor media zoals afbeeldingen, audio en video.</p>
-     
+
     <ul class="top-level-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
@@ -96,14 +111,11 @@
         </li>
     </ul>
 
-    <!-- Een afbeelding met een bron (src-attribuut) (img) -->
     <img src="" alt="nog niet af">
 
-    <!-- Voettekst van de pagina -->
     <footer>
-          <div class="footer-content">
-            <!-- Copyrightinformatie -->
-            <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>  
+        <div class="footer-content">
+            <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
         </div>
     </footer>
 </body>
