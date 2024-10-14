@@ -64,3 +64,40 @@
     line-height: 30px;
 }
 .top-level-menu a:hover { color: #000000; }
+
+/* Stijl voor de titel van de website */
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+}
+
+/* Aanvullende stijlen voor andere koppen */
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+/* CSS voor de iframe-container */
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    min-height: 70vh; /* Minimale hoogte van de container, in dit geval 70% van de viewport hoogte */
+    z-index: -1; /* Verlaag de z-index om ervoor te zorgen dat de tekst erboven wordt weergegeven */
+}
+
+
+/* Stijlen voor de footer */
+footer {
+    background-color: #ff0000; /* Rode achtergrondkleur */
+    color: #FFFFFF; /* Witte tekstkleur */
+    padding: 20px; /* Ruimte rondom de inhoud in de footer */
+    text-align: center; /* Tekst gecentreerd in de footer */
+    font-style: italic; /* Cursieve tekst */
+}
