@@ -6,6 +6,16 @@
 }
 .third-level-menu > li:hover { background: #CCCCCC; }
 
+/* Stijl voor de lijstitems (li) in het menu */
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Stijl voor koppelingen (a) in het menu */
+a {
+    font-size: 18px;
+}
 .second-level-menu
 {
     position: absolute;
