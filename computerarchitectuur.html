@@ -37,95 +37,34 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-        }
-
-        /* Top-level menu items */
-        .top-level-menu > li {
-            display: inline-block;
-            position: relative;
-        }
-
-        .top-level-menu > li a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            background-color: #333;
-            text-decoration: none;
-        }
-
-        .top-level-menu > li a:hover {
-            background-color: #555;
-        }
-
-        /* Submenu's standaard verbergen */
-        .second-level-menu,
-        .third-level-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-        }
-
-        .second-level-menu li,
-        .third-level-menu li {
-            position: relative;
-        }
-
-        .second-level-menu li a,
-        .third-level-menu li a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .second-level-menu li a:hover,
-        .third-level-menu li a:hover {
-            background-color: #555;
-        }
-
-        /* Submenu tonen bij hover */
-        li:hover > .second-level-menu,
-        li:hover > .third-level-menu {
-            display: block;
-        }
-
-        /* Clear float voor het hoofdmenu */
-        .top-level-menu:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
+        }  
+ 
     </style>
 </head>
 <body>
-
-<ul class="top-level-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
-    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-    <li><a href="Uitleg over het Binairstelsel.html">Binairstelsel</a></li>
-    <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
-    <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-    <li><a href="Compressie.html">Compressie</a></li>
-    <li>
-        <a href="computerarchitectuur.html">Computerarchitectuur</a>
-        <ul class="second-level-menu">
-            <li><a href="Fysieke laag.html">Fysieke Laag</a></li>
-            <li><a href="Logische laag.html">Logische Laag</a></li>
-            <li><a href="Toepassingslaag.html">Toepassingslaag</a>
-                <ul class="third-level-menu">
-                    <li><a href="#">Specifiek over</a></li>
-                    <li><a href="#">Specifiek over</a></li>
-                    <li><a href="#">Specifiek over</a></li>
-                    <li><a href="#">Jobs</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Seattle</a></li>
-        </ul>
-    </li>
-</ul>
+    
+    <ul class="top-level-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li>
+            <a href="#">Offices</a>
+            <ul class="second-level-menu">
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li>
+                    <a href="#">New York</a>
+                    <ul class="third-level-menu">
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Book a Meeting</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Seattle</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 
 <h1>Het drielagenmodel</h1>
 
