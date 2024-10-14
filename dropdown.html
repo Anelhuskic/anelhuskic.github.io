@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <!-- Definieer de tekenset van het document als UTF-8 -->
-    <meta charset="utf-8">
-    <!-- De titel die in de browserbalk wordt weergegeven -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computerarchitectuur</title>
-    <!-- Koppeling naar een extern CSS-bestand genaamd "opmaak.css" -->
     <link rel="stylesheet" type="text/css" href="opmaak2.css">
-    <!-- Begin van de interne CSS-stijlen voor de pagina -->
     <style>
-         /* Achtergrondkleur van de pagina instellen */
-         body {
+        /* Achtergrondkleur van de pagina instellen */
+        body {
             background-color: rgb(255, 0, 64);
         }
 
@@ -34,86 +31,122 @@
             display: block;
             margin: 0 auto;
         }
-        
+
         /* Stijl voor het navigatiemenu */
         ul {
             list-style-type: none;
-            margin:  0;
+            margin: 0;
             padding: 0;
         }
 
-        /* Stijl voor de lijstitems (li) in het menu */
-        li {
-            display: inline;
-            margin-right: 20px;
+        /* Top-level menu items */
+        .top-level-menu > li {
+            display: inline-block;
+            position: relative;
         }
 
-        /* Stijl voor koppelingen (a) in het menu */
-        a {
-            font-size: 18px;
+        .top-level-menu > li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+        }
+
+        .top-level-menu > li a:hover {
+            background-color: #555;
+        }
+
+        /* Submenu's standaard verbergen */
+        .second-level-menu,
+        .third-level-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+        }
+
+        .second-level-menu li,
+        .third-level-menu li {
+            position: relative;
+        }
+
+        .second-level-menu li a,
+        .third-level-menu li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .second-level-menu li a:hover,
+        .third-level-menu li a:hover {
+            background-color: #555;
+        }
+
+        /* Submenu tonen bij hover */
+        li:hover > .second-level-menu,
+        li:hover > .third-level-menu {
+            display: block;
+        }
+
+        /* Clear float voor het hoofdmenu */
+        .top-level-menu:after {
+            content: "";
+            display: block;
+            clear: both;
         }
     </style>
-    <!-- Einde van de interne CSS-stijlen -->
 </head>
 <body>
-    
-    <ul class="top-level-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        <li><a href="Uitleg over het Binairstelsel.html">Binairstelsel</a></li>
-        <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
-        <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-        <li><a href="Compressie.html">Compressie</a></li>
-        <li>
-            <a href="Computerarchitectuur.html">Computerarchitectuur</a>
-            <ul class="second-level-menu">
-                <li><a href="index.html">Fysieke Laag</a></li>
-                <li><a href="Logische laag.html">Logische Laag</a></li>
-                <li><a href="Toepassingslaag.html">Toepassingslaag</a>
-                    <ul class="third-level-menu">
-                        <li><a href="#">Specifiek over</a></li>
-                        <li><a href="#">Specifiek over</a></li>
-                        <li><a href="#">Specifiek over</a></li>
-                        <li><a href="#">Jobs</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Seattle</a></li>
-            </ul>
-        </li>
-    </ul>
-    
-    <!-- Hoofdkop (h1) voor de pagina -->
-    <h1>Het drielagenmodel</h1>
-    
-    <!-- Hier komt de inhoud over compressie -->
-    
-    <!-- Eerste alinea (p) -->
-    <p></p>
-     
-    <!-- Eerste subkop (h1) -->
-    <h1> Het drielagenmodel/h1>
-    
-    <!-- Tweede alinea (p) -->
-    <p></p>
-    
-    <!-- Derde alinea (p) -->
-    <p></p>
 
-  
+<ul class="top-level-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Het Kampioenschap.html">Het Kampioenschap</a></li>
+    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+    <li><a href="Uitleg over het Binairstelsel.html">Binairstelsel</a></li>
+    <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
+    <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+    <li><a href="Compressie.html">Compressie</a></li>
+    <li>
+        <a href="Computerarchitectuur.html">Computerarchitectuur</a>
+        <ul class="second-level-menu">
+            <li><a href="index.html">Fysieke Laag</a></li>
+            <li><a href="Logische laag.html">Logische Laag</a></li>
+            <li>
+                <a href="Toepassingslaag.html">Toepassingslaag</a>
+                <ul class="third-level-menu">
+                    <li><a href="#">Specifiek over</a></li>
+                    <li><a href="#">Specifiek over</a></li>
+                    <li><a href="#">Specifiek over</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Seattle</a></li>
+        </ul>
+    </li>
+</ul>
 
-    <!-- Een afbeelding met een bron (src-attribuut) (img) -->
-    <img src=alt="nog niet af">
+<h1>Het drielagenmodel</h1>
 
-    <!-- Voettekst van de pagina -->
-    <footer>
-          <div class="footer-content">
-            <!-- Copyrightinformatie -->
-            <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>  
-        </div>
-    </footer>
+<p></p>
+
+<h1>Het drielagenmodel</h1>
+
+<p></p>
+
+<img src="" alt="nog niet af">
+
+<footer>
+    <div class="footer-content">
+        <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+
 </body>
 </html>
+
 
 
 
