@@ -107,3 +107,80 @@ li a {
     padding: 14px 16px; /* Ruimte binnenin menu-items */
     text-decoration: none;
 }
+
+/* Stijl voor het navigatiemenu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
+    position: fixed; /* Menu vast bovenaan de pagina */
+    top: 0; /* Plaats het menu helemaal bovenaan */
+    width: 100%; /* Breedte van het menu */
+    z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
+}
+
+/* Stijl voor de lijstitems (li) in het menu */
+li {
+    float: left; /* Lijstitems naast elkaar plaatsen */
+    border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
+    position: relative; /* Voor absolute positionering van submenu's */
+}
+
+li:last-child {
+    border-right: none; /* Geen rechterrand voor het laatste menu-item */
+}
+
+/* Stijlen voor het dropdown-menu */
+.second-level-menu {
+    display: none; /* Verberg het submenu standaard */
+    position: absolute;
+    top: 30px; /* Dit zorgt ervoor dat het submenu net onder het hoofdmenu verschijnt */
+    left: 0;
+    background-color: #999999;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Wanneer je over het menu-item "Computerarchitectuur" hovert, toon het submenu */
+li:hover > .second-level-menu {
+    display: block; /* Toon het submenu */
+}
+
+/* Stijlen voor de items in het submenu */
+.second-level-menu > li {
+    height: 30px;
+    background: #999999;
+}
+
+.second-level-menu > li:hover {
+    background: #CCCCCC; /* Verander de kleur bij hover */
+}
+
+/* Style de links binnen het submenu */
+.second-level-menu a {
+    color: white; /* Witte tekstkleur */
+    text-decoration: none;
+    padding: 8px 16px; /* Ruimte binnenin submenu-items */
+    display: block;
+    width: 100%;
+}
+
+.second-level-menu a:hover {
+    color: black; /* Zwarte tekstkleur bij hover */
+}
+
+/* Menu Link Styles */
+.top-level-menu a {
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-menu a:hover { color: #000000; }
