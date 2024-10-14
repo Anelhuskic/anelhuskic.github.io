@@ -5,11 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computerarchitectuur</title>
     <link rel="stylesheet" type="text/css" href="opmaak2.css">
-    <!-- Interne CSS-stijlen -->
-    <!-- Hier voeg je de aangepaste CSS van hierboven toe -->
+    <style>
+        /* Achtergrondkleur van de pagina instellen */
+        body {
+            background-color: rgb(255, 0, 64);
+        }
+
+        /* Tekststijl voor de hoofdkop (h1) */
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Tekststijl voor alinea's (p) */
+        p {
+            font-family: verdana;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Stijl voor afbeeldingen (img) */
+        img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Stijl voor het top-level menu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Menu-items centreren */
+        }
+
+        /* Stijl voor de lijstitems (li) in het menu */
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Stijl voor de koppelingen (a) in het menu */
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        /* Stijl voor de dropdown-menu's */
+        ul.second-level-menu, ul.third-level-menu {
+            display: none; /* Verberg dropdown-menu's standaard */
+            position: absolute;
+            background-color: rgb(255, 0, 64);
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Toon de dropdown-menu's bij hover */
+        li:hover > ul.second-level-menu,
+        li:hover > ul.third-level-menu {
+            display: block;
+        }
+
+        /* Stijl voor de tweede en derde niveau lijstitems */
+        ul.second-level-menu li, ul.third-level-menu li {
+            display: block;
+            margin: 0;
+        }
+
+        /* Plaatsing van de dropdown-menu's */
+        ul.second-level-menu {
+            top: 100%;
+            left: 0;
+        }
+
+        ul.third-level-menu {
+            top: 0;
+            left: 100%; /* Zorg ervoor dat het derde menu naast het tweede komt */
+        }
+
+        /* Koppelingen in de dropdown-menu's */
+        ul.second-level-menu li a, ul.third-level-menu li a {
+            padding: 10px 15px;
+            white-space: nowrap;
+        }
+
+        /* Hover-effecten voor de menu-items */
+        li a:hover {
+            background-color: rgb(100, 100, 100);
+        }
+    </style>
 </head>
 <body>
-
     <!-- Top-level menu -->
     <ul class="top-level-menu">
         <li><a href="index.html">Home</a></li>
@@ -47,9 +139,9 @@
     <footer>
         <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
     </footer>
-
 </body>
 </html>
+
 
 
 
