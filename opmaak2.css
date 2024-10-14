@@ -1,84 +1,6 @@
 
 
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
-}
-.third-level-menu > li:hover { background: #CCCCCC; }
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.top-level-menu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    width: 150px;
-    background: #999999;
-}
-.top-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu li:hover > ul
-{
-    /* On hover, display the next level's menu */
-    display: inline;
-}
-
-
-/* Menu Link Styles */
-
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-
-    /* Make the link cover the entire list item-container */
-    display: block;
-    line-height: 30px;
-}
-.top-level-menu a:hover { color: #000000; }
-
-/* Stijlen voor het navigatiemenu */
+/* Algemene stijl voor de lijst (ul) */
 ul {
     list-style-type: none;
     margin: 0;
@@ -91,37 +13,7 @@ ul {
     z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
 }
 
-li {
-    float: left; /* Lijstitems naast elkaar plaatsen */
-    border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
-}
-
-li:last-child {
-    border-right: none; /* Geen rechterrand voor het laatste menu-item */
-}
-
-li a {
-    display: block;
-    color: white; /* Witte tekstkleur */
-    text-align: center;
-    padding: 14px 16px; /* Ruimte binnenin menu-items */
-    text-decoration: none;
-}
-
-/* Stijl voor het navigatiemenu */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
-    position: fixed; /* Menu vast bovenaan de pagina */
-    top: 0; /* Plaats het menu helemaal bovenaan */
-    width: 100%; /* Breedte van het menu */
-    z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
-}
-
-/* Stijl voor de lijstitems (li) in het menu */
+/* Algemene stijl voor de lijstitems (li) */
 li {
     float: left; /* Lijstitems naast elkaar plaatsen */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
@@ -132,7 +24,38 @@ li:last-child {
     border-right: none; /* Geen rechterrand voor het laatste menu-item */
 }
 
-/* Stijlen voor het dropdown-menu */
+/* Stijl voor het hoofdmenu */
+.top-level-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li {
+    height: 30px;
+    width: 150px;
+    background: #999999;
+}
+
+.top-level-menu > li:hover {
+    background: #CCCCCC; /* Hover kleur */
+}
+
+/* Stijlen voor de links binnen het hoofdmenu */
+.top-level-menu a {
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-menu a:hover {
+    color: #000000; /* Hover kleur */
+}
+
+/* Stijl voor het tweede niveau dropdown-menu */
 .second-level-menu {
     display: none; /* Verberg het submenu standaard */
     position: absolute;
@@ -145,22 +68,22 @@ li:last-child {
     margin: 0;
 }
 
-/* Wanneer je over het menu-item "Computerarchitectuur" hovert, toon het submenu */
-li:hover > .second-level-menu {
+/* Toon het submenu wanneer je over het hoofdmenu-item hover */
+.top-level-menu > li:hover > .second-level-menu {
     display: block; /* Toon het submenu */
 }
 
-/* Stijlen voor de items in het submenu */
+/* Stijlen voor de items in het tweede niveau submenu */
 .second-level-menu > li {
     height: 30px;
     background: #999999;
 }
 
 .second-level-menu > li:hover {
-    background: #CCCCCC; /* Verander de kleur bij hover */
+    background: #CCCCCC; /* Hover kleur */
 }
 
-/* Style de links binnen het submenu */
+/* Style de links binnen het tweede niveau submenu */
 .second-level-menu a {
     color: white; /* Witte tekstkleur */
     text-decoration: none;
@@ -173,14 +96,58 @@ li:hover > .second-level-menu {
     color: black; /* Zwarte tekstkleur bij hover */
 }
 
-/* Menu Link Styles */
-.top-level-menu a {
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-    display: block;
-    line-height: 30px;
+/* Stijl voor het derde niveau dropdown-menu */
+.third-level-menu {
+    display: none; /* Verberg het submenu standaard */
+    position: absolute;
+    top: 30px; /* Dit zorgt ervoor dat het submenu net onder het tweede niveau verschijnt */
+    left: 0;
+    background-color: #777777; /* Andere kleur voor derde niveau */
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.top-level-menu a:hover { color: #000000; }
+/* Toon het derde niveau submenu wanneer je over het tweede niveau hover */
+.second-level-menu > li:hover > .third-level-menu {
+    display: block; /* Toon het submenu */
+}
+
+/* Stijlen voor de items in het derde niveau submenu */
+.third-level-menu > li {
+    height: 30px;
+    background: #777777; /* Andere kleur voor derde niveau */
+}
+
+.third-level-menu > li:hover {
+    background: #CCCCCC; /* Hover kleur */
+}
+
+/* Stijl voor het vierde niveau dropdown-menu */
+.fourth-level-menu {
+    display: none; /* Verberg het submenu standaard */
+    position: absolute;
+    top: 30px; /* Dit zorgt ervoor dat het submenu net onder het derde niveau verschijnt */
+    left: 0;
+    background-color: #555555; /* Andere kleur voor vierde niveau */
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Toon het vierde niveau submenu wanneer je over het derde niveau hover */
+.third-level-menu > li:hover > .fourth-level-menu {
+    display: block; /* Toon het submenu */
+}
+
+/* Stijlen voor de items in het vierde niveau submenu */
+.fourth-level-menu > li {
+    height: 30px;
+    background: #555555; /* Andere kleur voor vierde niveau */
+}
+
+.fourth-level-menu > li:hover {
+    background: #CCCCCC; /* Hover kleur */
+}

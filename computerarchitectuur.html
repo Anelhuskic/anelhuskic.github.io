@@ -31,14 +31,6 @@
             display: block;
             margin: 0 auto;
         }
-
-        /* Stijl voor het navigatiemenu */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }  
- 
     </style>
 </head>
 <body>
@@ -54,31 +46,37 @@
         <li>
             <a href="computerarchitectuur.html">Computerarchitectuur</a>
             <ul class="second-level-menu">
-                <li><a href="#">Het drielagenmodel</a></li>
-                <li><a href="#">Opslagtypes</a></li>
-                <li><a href="#">Processor architectuur</a></li>
+                <li>
+                    <a href="#">Drielagenmodel</a>
+                    <ul class="third-level-menu">
+                        <li><a href="#">Fysieke Laag</a></li>
+                        <li>
+                            <a href="#">Logische Laag</a>
+                            <ul class="fourth-level-menu">
+                                <li><a href="#">Processor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Toepassingslaag</a></li>
+                    </ul>
+                </li>
             </ul>
         </li>
     </ul>
 
+    <h1>Het drielagenmodel</h1>
+    <p>Dit is een korte uitleg over het drielagenmodel in de computerarchitectuur.</p>
 
-<h1>Het drielagenmodel</h1>
+    <img src="Foto_over_computerarchitectuur.jpg" alt="nog niet af">
 
-<p></p>
-
-
-<p></p>
-
-<img src="" alt="nog niet af">
-
-<footer>
-    <div class="footer-content">
-        <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Anel Huskic - Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
+
 
 
 
