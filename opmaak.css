@@ -1,36 +1,41 @@
-/* Achtergrondkleur van de pagina instellen */
+/* General body styling */
 body {
     background-color: rgb(255, 0, 64);
 }
 
-/* Tekststijl voor de hoofdkop (h1) */
-h1 {
+/* Heading styles */
+h1, h2, h3 {
     color: white;
     text-align: center;
-    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
 }
 
-/* Tekststijl voor alinea's (p) */
+h1 {
+    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+    clear: both;
+}
+
+/* Paragraph styles */
 p {
-    font-family: Verdana, sans-serif;
+    font-family: verdana;
     font-size: 16px;
     color: white;
     border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
+    outline: red; /* Rode rand rondom de focus van het element */
     margin: auto; /* Horizontaal centreren */
     padding: 9px; /* Ruimte binnenin het element */
     text-align: left; /* Tekst uitlijnen naar links */
 }
 
-/* Stijl voor afbeeldingen (img) */
+/* Image styling */
 img {
     width: 50%;
-    height: auto; /* Zorgt ervoor dat de verhouding behouden blijft */
+    height: 50%;
     display: block;
-    margin: 0 auto; /* Afbeelding in het midden van de pagina plaatsen */
+    margin: 0 auto;
 }
 
-/* Stijl voor het top-level navigatiemenu */
-ul.top-level-menu {
+/* Navigation menu styles */
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -39,29 +44,29 @@ ul.top-level-menu {
     position: fixed; /* Menu vast bovenaan de pagina */
     top: 0;
     width: 100%;
-    z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
+    z-index: 2;
 }
 
-/* Stijl voor de lijstitems (li) in het menu */
-ul.top-level-menu li {
+li {
     float: left; /* Lijstitems naast elkaar plaatsen */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
+    margin-right: 20px;
 }
 
-ul.top-level-menu li:last-child {
+li:last-child {
     border-right: none; /* Geen rechterrand voor het laatste menu-item */
 }
 
-/* Stijl voor koppelingen (a) in het menu */
-ul.top-level-menu li a {
+li a {
     display: block;
     color: white; /* Witte tekstkleur */
     text-align: center;
-    padding: 14px 16px; /* Ruimte binnenin menu-items */
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 18px; /* Larger font size */
 }
 
-ul.top-level-menu li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
 }
 
@@ -69,62 +74,68 @@ ul.top-level-menu li a:hover:not(.active) {
     background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
 }
 
-/* CSS voor het tweede en derde niveau menu */
-ul.second-level-menu, ul.third-level-menu {
-    position: absolute;
-    display: none;
+/* Dropdown menu styling */
+.top-level-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    clear: both;
 }
 
-ul.second-level-menu {
-    top: 30px;
+.top-level-menu > li {
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 130px;
+    background: #999999;
+}
+
+.top-level-menu > li:hover {
+    background: #CCCCCC;
+}
+
+.top-level-menu li:hover > ul {
+    display: inline; /* Show next-level menu on hover */
+}
+
+.second-level-menu, .third-level-menu {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu {
+    top: 20px;
     left: 0;
-    width: 150px;
+    width: 130px;
 }
 
-ul.third-level-menu {
+.third-level-menu {
     top: 0;
     right: -150px;
     width: 150px;
 }
 
-ul.second-level-menu > li, ul.third-level-menu > li {
+.second-level-menu > li, .third-level-menu > li {
+    position: relative;
+    height: 40px;
     background: #999999;
-    height: 30px;
 }
 
-ul.second-level-menu > li:hover, ul.third-level-menu > li:hover {
+.second-level-menu > li:hover, .third-level-menu > li:hover {
     background: #CCCCCC;
 }
 
-/* Toon de submenu's bij hover */
-.top-level-menu li:hover > ul {
-    display: block; /* Toon het volgende niveau menu bij hover */
-}
-
-/* Stijl voor links in het menu */
-.top-level-menu a {
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: white;
-    text-decoration: none;
-    padding-left: 10px;
-    display: block;
-    line-height: 30px;
-}
-
-.top-level-menu a:hover {
-    color: black;
-}
-
-/* Stijlen voor de footer */
+/* Footer styles */
 footer {
-    background-color: #ff0000; /* Rode achtergrondkleur */
-    color: #FFFFFF; /* Witte tekstkleur */
-    padding: 20px; /* Ruimte rondom de inhoud in de footer */
-    text-align: center; /* Tekst gecentreerd in de footer */
-    font-style: italic; /* Cursieve tekst */
+    background-color: #ff0000;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
 }
+
 
 
