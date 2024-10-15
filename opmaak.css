@@ -49,6 +49,7 @@ ul {
 
 li {
     float: left; /* Lijstitems naast elkaar plaatsen */
+    position: relative; /* Noodzakelijk voor het positioneren van de dropdown-menu's */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
     margin-right: 20px;
 }
@@ -83,7 +84,6 @@ li a:hover:not(.active) {
 }
 
 .top-level-menu > li {
-    position: relative;
     float: left;
     height: 40px;
     width: 130px;
@@ -95,7 +95,7 @@ li a:hover:not(.active) {
 }
 
 .top-level-menu li:hover > ul {
-    display: inline; /* Show next-level menu on hover */
+    display: block; /* Show next-level menu on hover */
 }
 
 .second-level-menu, .third-level-menu {
@@ -103,23 +103,24 @@ li a:hover:not(.active) {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: none; /* Hidden by default */
+    background-color: #999999;
+    z-index: 1;
 }
 
 .second-level-menu {
-    top: 20px;
+    top: 100%; /* Position the second-level menu directly below the top-level menu */
     left: 0;
     width: 130px;
 }
 
 .third-level-menu {
     top: 0;
-    right: -150px;
+    left: 100%; /* Position the third-level menu next to the second-level menu */
     width: 150px;
 }
 
 .second-level-menu > li, .third-level-menu > li {
-    position: relative;
     height: 40px;
     background: #999999;
 }
@@ -136,6 +137,7 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
 
 
 
