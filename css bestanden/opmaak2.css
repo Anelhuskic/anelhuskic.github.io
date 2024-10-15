@@ -1,7 +1,7 @@
 ul ul {
     display: none; /* Verberg het dropdownmenu standaard */
     position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
-    background-color: #609f9f; /* Achtergrondkleur van het dropdownmenu */
+    background-color: rgb(255, 0, 64); /* Achtergrondkleur van het dropdownmenu */
     padding: 0; /* Geen padding voor het dropdownmenu */
     margin: 0; /* Geen marge voor het dropdownmenu */
     z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
