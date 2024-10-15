@@ -1,4 +1,4 @@
-/* Stijl voor de dropdown-menu */
+/* Algemeen voor de body */
 body {
     background-color: rgb(255, 0, 64); /* Hoofdachtergrondkleur */
 }
@@ -9,14 +9,15 @@ body {
     padding: 0;
     margin: 0;
     background-color: #333; /* Donkere achtergrond voor het menu */
+    position: relative; /* Nodig voor het positioneren van de dropdowns */
 }
 
 .top-level-menu > li {
-    position: relative; /* Nodig voor het positioneren van de dropdowns */
     float: left; /* Plaatst menu-items horizontaal */
     height: 40px; /* Verhoogde hoogte voor betere spacing */
 }
 
+/* Hover-effect voor top-level menu-items */
 .top-level-menu > li:hover {
     background: #444; /* Iets lichtere achtergrond bij hover */
 }
@@ -31,6 +32,7 @@ body {
     line-height: 20px;
 }
 
+/* Hover-effect voor links */
 .top-level-menu a:hover {
     color: #FFD700; /* Gouden kleur bij hover voor contrast */
 }
@@ -49,10 +51,12 @@ body {
     z-index: 10; /* Zorgt ervoor dat het boven andere elementen staat */
 }
 
+/* Tweede niveau menu items */
 .second-level-menu > li {
     height: 30px; /* Hoogte voor dropdown items */
 }
 
+/* Hover-effect voor tweede niveau menu items */
 .second-level-menu > li:hover {
     background: #777; /* Donkerder grijs bij hover */
 }
@@ -70,10 +74,12 @@ body {
     background-color: #666; /* Zelfde grijze achtergrond als tweede niveau */
 }
 
+/* Derde niveau menu items */
 .third-level-menu > li {
     height: 30px; /* Hoogte voor dropdown items */
 }
 
+/* Hover-effect voor derde niveau menu items */
 .third-level-menu > li:hover {
     background: #777; /* Donkerder grijs bij hover */
 }
@@ -86,5 +92,6 @@ body {
 .second-level-menu > li:hover > .third-level-menu {
     display: block; /* Toon het derde niveau menu */
 }
+
 
 
