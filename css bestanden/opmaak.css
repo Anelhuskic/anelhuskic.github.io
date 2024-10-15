@@ -10,7 +10,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+    margin-top: 60px; /* Ruimte boven de titel om plaats te maken voor het menu */
     clear: both;
 }
 
