@@ -1,11 +1,11 @@
 /* General body styling */
 body {
-    background-color: rgb(255, 0, 64);
+    background-color: rgb(255, 247, 247);
 }
 
 /* Heading styles */
 h1, h2, h3 {
-    color: white;
+    color: rgb(223, 31, 31);
     text-align: center;
 }
 
@@ -18,8 +18,8 @@ h1 {
 p {
     font-family: verdana;
     font-size: 16px;
-    color: white;
-    border: 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
+    color: rgb(223, 31, 31)
+    border 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
     outline: red; /* Rode rand rondom de focus van het element */
     margin: auto; /* Horizontaal centreren */
     padding: 9px; /* Ruimte binnenin het element */
