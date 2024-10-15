@@ -43,7 +43,7 @@ ul.main-menu {
     background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
     z-index: 2;
     display: flex;
 }
