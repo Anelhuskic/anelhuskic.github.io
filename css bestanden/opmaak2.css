@@ -1,34 +1,64 @@
-/* Opmaak voor het dropdownmenu */
-ul ul {
-    display: none; /* Verberg het dropdownmenu standaard */
-    position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
-    background-color: #9f8260; /* Achtergrondkleur van het dropdownmenu */
-    padding: 0; /* Geen padding voor het dropdownmenu */
-    margin: 0; /* Geen marge voor het dropdownmenu */
-    z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
+/* Dropdownmenu: basisinstellingen */
+.dropdown-menu {
+    display: none; /* Standaard verbergen */
+    position: absolute; /* Absoluut positioneren ten opzichte van het bovenliggende item */
+    background-color: #9f8260; /* Achtergrondkleur */
+    padding: 0; /* Geen padding */
+    margin: 0; /* Geen marge */
+    z-index: 1; /* Zorgen dat het boven andere elementen staat */
 }
 
-/* Toon het dropdownmenu bij hover over de bovenliggende li */
-li:hover > ul {
-    display: block; /* Toon het dropdownmenu bij hover */
+/* Activeren van het dropdownmenu bij hover */
+.menu-item:hover .dropdown-menu {
+    display: block; /* Toon het dropdownmenu */
 }
 
-/* Opmaak voor de items in het dropdownmenu */
-ul ul li {
-    float: none; /* Zorg ervoor dat de items onder elkaar staan */
-    border: none; /* Geen border voor dropdown items */
+/* Styling voor items binnen het dropdownmenu */
+.dropdown-menu .menu-item {
+    float: none; /* Items onder elkaar */
+    border: none; /* Geen rand */
 }
 
-/* Link opmaak binnen het dropdownmenu */
-ul ul li a {
-    padding: 10px 15px; /* Padding voor links in het dropdownmenu */
-    color: white; /* Kleur voor links in het dropdownmenu */
-    text-align: left; /* Align links naar links in het dropdownmenu */
+/* Linkstyling binnen het dropdownmenu */
+.dropdown-menu .menu-item a {
+    padding: 10px 15px; /* Padding voor links */
+    color: white; /* Kleur van de links */
+    text-align: left; /* Links uitlijnen */
+    text-decoration: none; /* Geen onderstreping */
 }
 
-/* Hover-effect voor links in het dropdownmenu */
-ul ul li a:hover {
+/* Hover-effect voor links binnen het dropdownmenu */
+.dropdown-menu .menu-item a:hover {
     background-color: #111; /* Achtergrondkleur bij hover */
+}
+
+/* Derde niveau dropdownmenu */
+.third-level-menu {
+    display: none; /* Standaard verbergen */
+    position: absolute; /* Absoluut positioneren ten opzichte van het tweede niveau item */
+    left: 100%; /* Plaats het rechts van het tweede niveau item */
+    top: 0; /* Uitlijnen met het tweede niveau item */
+}
+
+/* Activeren van het derde niveau dropdownmenu bij hover */
+.menu-item:hover .third-level-menu {
+    display: block; /* Toon het derde niveau dropdownmenu */
+}
+
+/* Styling voor items binnen het derde niveau dropdownmenu */
+.third-level-menu .menu-item {
+    float: none; /* Items onder elkaar */
+}
+
+/* Linkstyling binnen het derde niveau dropdownmenu */
+.third-level-menu .menu-item a {
+    padding: 10px 15px; /* Padding voor links */
+    color: white; /* Kleur van de links */
+}
+
+/* Hover-effect voor links binnen het derde niveau dropdownmenu */
+.third-level-menu .menu-item a:hover {
+    background-color: #222; /* Achtergrondkleur bij hover */
 }
 
 
