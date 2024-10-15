@@ -5,14 +5,15 @@ body {
 
 /* Top-level menu */
 .top-level-menu {
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #333; /* Donkere achtergrond voor het menu */
+    background-color: #461717; /* Donkere achtergrond voor het menu */
 }
 
 .top-level-menu > li {
-    position: relative; /* Nodig voor het positioneren van de dropdowns */
+    position: absolute
     float: left; /* Plaatst menu-items horizontaal */
     height: 40px; /* Verhoogde hoogte voor betere spacing */
 }
