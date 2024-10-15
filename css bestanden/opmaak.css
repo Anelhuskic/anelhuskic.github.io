@@ -45,13 +45,14 @@ ul.main-menu {
     top: 0;
     width: 100%;
     z-index: 2;
+    display: flex;
 }
 
 .main-menu li {
     float: left; /* Lijstitems naast elkaar plaatsen */
     position: relative; /* Noodzakelijk voor het positioneren van de dropdown-menu's */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
-    margin-right: 20px;
+    margin-right: 13px;
 }
 
 .main-menu li:last-child {
