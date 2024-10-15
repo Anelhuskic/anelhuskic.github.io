@@ -1,5 +1,4 @@
-.third-level-menu
-{
+.third-level-menu {
     position: absolute;
     top: 0;
     right: -150px;
@@ -7,18 +6,19 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: none; /* Verborgen totdat er gehoverd wordt */
 }
 
-.third-level-menu > li
-{
+.third-level-menu > li {
     height: 30px;
     background: #999999;
 }
-.third-level-menu > li:hover { background: #CCCCCC; }
 
-.second-level-menu
-{
+.third-level-menu > li:hover { 
+    background: #CCCCCC; 
+}
+
+.second-level-menu {
     position: absolute;
     top: 30px;
     left: 0;
@@ -26,18 +26,34 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: none; /* Verborgen totdat er gehoverd wordt */
 }
 
-.second-level-menu > li
-{
+.second-level-menu > li {
     position: relative;
     height: 30px;
     background: #999999;
 }
-.second-level-menu > li:hover { background: #CCCCCC; }
 
-.top-level-menu
+.second-level-menu > li:hover { 
+    background: #CCCCCC; 
+}
+
+.top-level-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.top-level-menu li:hover > .second-level-menu {
+    display: block; /* Toon het tweede niveau bij hover */
+}
+
+.second-level-menu li:hover > .third-level-menu {
+    display: block; /* Toon het derde niveau bij hover */
+}
+
 
 
 
