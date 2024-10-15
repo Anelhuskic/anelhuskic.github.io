@@ -1,28 +1,28 @@
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
 
 .third-level-menu > li
 {
-    height: 40px;
+    height: 30px;
     background: #999999;
 }
 .third-level-menu > li:hover { background: #CCCCCC; }
 
-
-/* Stijl voor de lijstitems (li) in het menu */
-li {
-    display: inline;
-    margin-right: 20px;
-}
-
-/* Stijl voor koppelingen (a) in het menu */
-a {
-    font-size: 18px;
-}
 .second-level-menu
 {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 0;
-    width: 130px;
+    width: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -32,7 +32,7 @@ a {
 .second-level-menu > li
 {
     position: relative;
-    height: 40px;
+    height: 30px;
     background: #999999;
 }
 .second-level-menu > li:hover { background: #CCCCCC; }
@@ -42,15 +42,14 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
-    clear: both;
 }
 
 .top-level-menu > li
 {
     position: relative;
     float: left;
-    height: 40px;
-    width: 130px;
+    height: 30px;
+    width: 150px;
     background: #999999;
 }
 .top-level-menu > li:hover { background: #CCCCCC; }
@@ -76,42 +75,3 @@ a {
     line-height: 30px;
 }
 .top-level-menu a:hover { color: #000000; }
-
-/* Stijl voor de titel van de website */
-h1 {
-    color: white;
-    text-align: center;
-    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
-    clear: both;
-}
-
-/* Aanvullende stijlen voor andere koppen */
-h2 {
-    color: white;
-    text-align: center;
-}
-
-h3 {
-    color: white;
-    text-align: center;
-}
-
-/* CSS voor de iframe-container */
-.iframe-container {
-    display: flex;
-    justify-content: center; /* Horizontaal centreren */
-    align-items: center; /* Verticaal centreren */
-    min-height: 70vh; /* Minimale hoogte van de container, in dit geval 70% van de viewport hoogte */
-    z-index: -1; /* Verlaag de z-index om ervoor te zorgen dat de tekst erboven wordt weergegeven */
-}
-
-
-/* Stijlen voor de footer */
-footer {
-    background-color: #ff0000; /* Rode achtergrondkleur */
-    color: #FFFFFF; /* Witte tekstkleur */
-    padding: 20px; /* Ruimte rondom de inhoud in de footer */
-    text-align: center; /* Tekst gecentreerd in de footer */
-    font-style: italic; /* Cursieve tekst */
-}
-</style>
