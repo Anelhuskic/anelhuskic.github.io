@@ -34,31 +34,31 @@ img {
     margin: 0 auto;
 }
 
-/* Navigation menu styles */
-ul {
+/* Main navigation menu styles */
+ul.main-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible; /* Veranderd van hidden naar visible zodat dropdowns niet worden afgesneden */
     background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
-    position: fixed; /* Menu vast bovenaan de pagina */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
 }
 
-li {
+.main-menu li {
     float: left; /* Lijstitems naast elkaar plaatsen */
     position: relative; /* Noodzakelijk voor het positioneren van de dropdown-menu's */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
     margin-right: 20px;
 }
 
-li:last-child {
+.main-menu li:last-child {
     border-right: none; /* Geen rechterrand voor het laatste menu-item */
 }
 
-li a {
+.main-menu li a {
     display: block;
     color: white; /* Witte tekstkleur */
     text-align: center;
@@ -67,7 +67,7 @@ li a {
     font-size: 18px; /* Larger font size */
 }
 
-li a:hover:not(.active) {
+.main-menu li a:hover:not(.active) {
     background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
 }
 
@@ -83,6 +83,7 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
 
 
 
