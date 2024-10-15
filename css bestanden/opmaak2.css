@@ -30,6 +30,20 @@ ul ul li a:hover {
     background-color: #111; /* Achtergrondkleur bij hover */
 }
 
+/* Styling voor de derde niveau dropdown */
+ul ul ul {
+    display: none; /* Verberg het derde niveau dropdownmenu standaard */
+    position: absolute; /* Absoluut gepositioneerd */
+    left: 100%; /* Verschijnen naar rechts van het tweede niveau */
+    top: 0; /* Zorgt ervoor dat het op dezelfde hoogte blijft */
+}
+
+/* Toon derde niveau dropdownmenu bij hover over de tweede niveau li */
+ul ul li:hover > ul {
+    display: block; /* Weergeven bij hover */
+}
+
+
 
 
 
