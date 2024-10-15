@@ -6,7 +6,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; /* Verborgen totdat er gehoverd wordt */
+    display: none; /* Standaard verborgen */
 }
 
 .third-level-menu > li {
@@ -26,7 +26,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; /* Verborgen totdat er gehoverd wordt */
+    display: none; /* Standaard verborgen */
 }
 
 .second-level-menu > li {
@@ -39,6 +39,7 @@
     background: #CCCCCC; 
 }
 
+/* Stijlen voor top-level menu */
 .top-level-menu {
     list-style: none;
     padding: 0;
@@ -46,13 +47,26 @@
     background-color: #333;
 }
 
+.top-level-menu li {
+    position: relative;
+    float: left;
+    height: 40px;
+    background: #999999;
+}
+
+.top-level-menu li:hover { 
+    background: #CCCCCC;
+}
+
+/* Toon tweede en derde niveau menu's bij hover */
 .top-level-menu li:hover > .second-level-menu {
-    display: block; /* Toon het tweede niveau bij hover */
+    display: block; /* Toon het tweede niveau menu bij hover */
 }
 
 .second-level-menu li:hover > .third-level-menu {
-    display: block; /* Toon het derde niveau bij hover */
+    display: block; /* Toon het derde niveau menu bij hover */
 }
+
 
 
 
