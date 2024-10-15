@@ -5,73 +5,74 @@
     <title>Feyenoord Rotterdam</title>
     <link rel="stylesheet" href="opmaak.css">
     <style>
-         /* Stijl voor het top-level menu */
-         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center; /* Menu-items centreren */
-        }
+        /* Stijl voor het top-level menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Menu-items centreren */
+}
 
-        /* Stijl voor de lijstitems (li) in het menu */
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
+/* Stijl voor de lijstitems (li) in het menu */
+li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Nodig voor dropdown-menu's */
+}
 
-        /* Stijl voor de koppelingen (a) in het menu */
-        a {
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            padding: 10px 15px;
-            display: inline-block;
-        }
+/* Stijl voor de koppelingen (a) in het menu */
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
 
-        /* Stijl voor de dropdown-menu's */
-        ul.second-level-menu, ul.third-level-menu {
-            display: none; /* Verberg dropdown-menu's standaard */
-            position: absolute;
-            background-color: rgb(255, 0, 64);
-            padding: 0;
-            margin: 0;
-        }
+/* Stijl voor de dropdown-menu's */
+ul.second-level-menu, ul.third-level-menu {
+    display: none; /* Verberg dropdown-menu's standaard */
+    position: absolute;
+    background-color: rgb(255, 0, 64);
+    padding: 0;
+    margin: 0;
+    z-index: 10; /* Zorgt ervoor dat het dropdown-menu boven andere elementen wordt weergegeven */
+}
 
-        /* Toon de dropdown-menu's bij hover */
-        li:hover > ul.second-level-menu,
-        li:hover > ul.third-level-menu {
-            display: block;
-        }
+/* Toon de dropdown-menu's bij hover */
+li:hover > ul.second-level-menu,
+li:hover > ul.third-level-menu {
+    display: block; /* Dropdown-menu zichtbaar bij hover */
+}
 
-        /* Stijl voor de tweede en derde niveau lijstitems */
-        ul.second-level-menu li, ul.third-level-menu li {
-            display: block;
-            margin: 0;
-        }
+/* Stijl voor de tweede en derde niveau lijstitems */
+ul.second-level-menu li, ul.third-level-menu li {
+    display: block;
+    margin: 0;
+}
 
-        /* Plaatsing van de dropdown-menu's */
-        ul.second-level-menu {
-            top: 100%;
-            left: 0;
-        }
+/* Plaatsing van de dropdown-menu's */
+ul.second-level-menu {
+    top: 100%; /* Plaatst de tweede laag direct onder het bovenliggende menu-item */
+    left: 0;
+}
 
-        ul.third-level-menu {
-            top: 0;
-            left: 100%; /* Zorg ervoor dat het derde menu naast het tweede komt */
-        }
+ul.third-level-menu {
+    top: 0; /* Zorg ervoor dat het derde menu op hetzelfde niveau begint */
+    left: 100%; /* Plaats het derde menu naast het tweede */
+}
 
-        /* Koppelingen in de dropdown-menu's */
-        ul.second-level-menu li a, ul.third-level-menu li a {
-            padding: 10px 15px;
-            white-space: nowrap;
-        }
+/* Koppelingen in de dropdown-menu's */
+ul.second-level-menu li a, ul.third-level-menu li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
 
-        /* Hover-effecten voor de menu-items */
-        li a:hover {
-            background-color: rgb(100, 100, 100);
-        }
-    </style>
-    </style>
+/* Hover-effecten voor de menu-items */
+li a:hover {
+    background-color: rgb(100, 100, 100);
+}
+</style>
 </head>
 <body>
     <h1>Homepage</h1>
