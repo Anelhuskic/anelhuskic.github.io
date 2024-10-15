@@ -1,117 +1,43 @@
-/* Algemeen voor de body */
-body {
-    background-color: rgb(255, 0, 64); /* Hoofdachtergrondkleur */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Top-level menu */
-.top-level-menu {
-    list-style: none; /* Geen opsommingstekens */
-    padding: 0;
-    margin: 0;
-    background-color: #333; /* Donkergrijze achtergrond */
-    position: relative;
-    z-index: 2; /* Menu altijd boven andere elementen */
-}
-
-/* Top-level menu items */
-.top-level-menu > li {
-    float: left; /* Horizontale uitlijning van items */
-    height: 40px; /* Grotere hoogte voor betere klikruimte */
-    width: 150px; /* Breedte van de menu-items */
-    background: #999999; /* Lichtere grijze achtergrond */
-    border: 1px solid #FFFFFF; /* Witte rand om elk menu-item */
-    text-align: left; /* Links uitgelijnde tekst */
-}
-
-.top-level-menu > li:hover {
-    background: #CCCCCC; /* Iets lichtere achtergrondkleur bij hover */
-}
-
-/* Hover: Toon het submenu */
-.top-level-menu li:hover > ul {
-    display: inline; /* Toon het tweede niveau menu bij hover */
-}
-
-/* Stijlen voor links in het top-level menu */
-.top-level-menu a {
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF; /* Witte tekstkleur */
-    text-decoration: none; /* Geen onderstreping */
-    padding: 0 0 0 10px; /* Padding aan de linkerkant */
-    display: block; /* Link beslaat het hele item */
-    line-height: 40px; /* Zorg ervoor dat de link verticaal gecentreerd is */
-}
-
-.top-level-menu a:hover {
-    color: #000000; /* Zwarte tekstkleur bij hover */
-}
-
-/* Tweede niveau menu (dropdown) */
-.second-level-menu {
-    position: absolute; /* Positioneer onder het top-level item */
-    top: 40px; /* Plaats direct onder het top-level menu */
-    left: 0;
-    width: 150px; /* Breedte van het dropdown-menu */
-    list-style: none; /* Geen opsommingstekens */
-    padding: 0;
-    margin: 0;
-    display: none; /* Standaard niet zichtbaar */
-    background-color: #666; /* Donkergrijze achtergrond */
-    z-index: 10; /* Zorg dat het menu boven andere elementen zweeft */
-}
-
-.second-level-menu > li {
-    height: 30px; /* Hoogte van de dropdown items */
-    background: #999999; /* Achtergrondkleur van dropdown items */
-    border-bottom: 1px solid #FFFFFF; /* Witte rand onder elk item */
-}
-
-.second-level-menu > li:hover {
-    background: #CCCCCC; /* Lichtere achtergrond bij hover */
-}
-
-/* Derde niveau menu (dropdown) */
-.third-level-menu {
-    position: absolute; /* Positioneer naast het tweede niveau menu */
+.third-level-menu
+{
+    position: absolute;
     top: 0;
-    right: -150px; /* Plaats het derde niveau menu rechts van het tweede niveau */
+    right: -150px;
     width: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; /* Standaard niet zichtbaar */
-    background-color: #666; /* Donkergrijze achtergrond */
-    z-index: 20; /* Zorgt ervoor dat het menu boven andere elementen zweeft */
+    display: none;
 }
 
-.third-level-menu > li {
-    height: 30px; /* Hoogte van de dropdown items */
-    background: #999999; /* Achtergrondkleur van derde niveau items */
-    border-bottom: 1px solid #FFFFFF; /* Witte rand onder elk item */
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: #CCCCCC; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
 
-.third-level-menu > li:hover {
-    background: #CCCCCC; /* Lichtere achtergrond bij hover */
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
 }
+.second-level-menu > li:hover { background: #CCCCCC; }
 
-/* Toon de dropdowns bij hover */
-.top-level-menu > li:hover > .second-level-menu {
-    display: block; /* Toon het tweede niveau menu */
-}
-
-.second-level-menu > li:hover > .third-level-menu {
-    display: block; /* Toon het derde niveau menu */
-}
-
-/* Footer styling */
-footer {
-    background-color: #ff0000;
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
-}
+.top-level-menu
 
 
 
