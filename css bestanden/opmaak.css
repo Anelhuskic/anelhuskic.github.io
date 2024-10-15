@@ -49,14 +49,16 @@ ul.main-menu {
 }
 
 .main-menu li {
-    float: left; /* Lijstitems naast elkaar plaatsen */
+    display: inline-block;
     position: relative; /* Noodzakelijk voor het positioneren van de dropdown-menu's */
     border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
     margin-right: 13px;
+    height: 50px;
 }
 
 .main-menu li:last-child {
     border-right: none; /* Geen rechterrand voor het laatste menu-item */
+    margin-right: 0;
 }
 
 .main-menu li a {
