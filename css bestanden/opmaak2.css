@@ -1,20 +1,19 @@
 ul ul {
-    display: none; /* Verberg het dropdownmenu standaard */
-    position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
+    display: none; /* hier wordt het dropdown menu verborgen */
+    position: absolute; /* Absolute positie van het dropdown menu */
     background-color:rgba(255, 0, 0, 0.614); /* /* Achtergrondkleur van het dropdownmenu */
-    padding: 0; /* Geen padding voor het dropdownmenu */
-    margin: 0; /* Geen marge voor het dropdownmenu */
-    z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
+    padding: 0; /* Geen padding  */
+    margin: 0; /* Geen marge  */
+    z-index: 1; /* Dropdown menu boven andere elementen */
 }
 
-/* Toon het dropdownmenu bij hover over de bovenliggende li */
 li:hover > ul {
     display: block; /* Toon het dropdownmenu bij hover */
 }
 
-/* Opmaak voor de items in het dropdownmenu */
+/* Hier is de css stijl voor de opmaak voor de items */
 ul ul li {
-    float: none; /* Zorg ervoor dat de items onder elkaar staan */
+    float: none; /* Items staan onder elkaar */
     border: none; /* Geen border voor dropdown items */
 }
 
