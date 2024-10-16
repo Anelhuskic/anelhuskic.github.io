@@ -38,6 +38,12 @@ ul ul ul {
     top: 0; /* Zorgt ervoor dat het op dezelfde hoogte blijft */
 }
 
+@media (max-width: 768px) {
+    ul ul ul {
+        left: -100%; /* Verplaats het menu naar links op kleinere schermen */
+    }
+}
+
 /* Toon derde niveau dropdownmenu bij hover over de tweede niveau li */
 ul ul li:hover > ul {
     display: block; /* Weergeven bij hover */
