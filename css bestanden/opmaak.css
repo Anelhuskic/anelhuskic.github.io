@@ -1,91 +1,95 @@
-/* General body styling */
+/* Algemene CSS-opmaak */
 body {
-    background-color: rgb(255, 247, 247);
+    background-color: rgb(255, 247, 247); /* Achtergrondkleur van de pagina */
 }
 
-/* Heading styles */
+/* Stijl voor headings */
 h1, h2, h3 {
-    color: rgb(223, 31, 31);
-    text-align: center;
+    color: rgb(223, 31, 31); /* Kleur van de koppen */
+    text-align: center; /* Tekst centreren */
 }
 
 h1 {
-    margin-top: 60px; /* Ruimte boven de titel om plaats te maken voor het menu */
-    clear: both;
+    margin-top: 60px; /* Ruimte boven de titel voor het menu */
+    clear: both; /* Voorkomt dat elementen rond de titel zweven */
 }
 
-/* Paragraph styles */
+/* Stijl voor paragrafen */
 p {
-    font-family: verdana;
-    font-size: 16px;
-    color: rgb(223, 31, 31)
-    border 2px solid rgb(255, 0, 64); /* Rand met rode kleur */
-    outline: red; /* Rode rand rondom de focus van het element */
-    margin: auto; /* Horizontaal centreren */
-    padding: 9px; /* Ruimte binnenin het element */
+    font-family: verdana; /* Lettertype voor de alinea's */
+    font-size: 16px; /* Lettergrootte */
+    color: rgb(223, 31, 31); /* Tekstkleur */
+    border: 2px solid rgb(255, 0, 64); /* Rand rond de alinea */
+    outline: red; /* Rode rand bij focus */
+    margin: auto; /* Horizontaal centreren van tekst */
+    padding: 9px; /* Binnenmarges van de tekst */
     text-align: left; /* Tekst uitlijnen naar links */
 }
 
-/* Image styling */
+/* Afbeeldingen */
 img {
-    width: 26%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 26%; /* Breedte van de afbeelding als percentage van de pagina */
+    height: auto; /* Automatische hoogte in verhouding tot de breedte */
+    display: block; /* Blok-element voor centreren */
+    margin: 0 auto; /* Afbeelding centreren */
 }
 
-/* Main navigation menu styles */
+/* Stijlen voor het hoofdmenu */
 ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: visible; /* Veranderd van hidden naar visible zodat dropdowns niet worden afgesneden */
-    background-color: rgba(255, 0, 0, 0.614); /* Rode achtergrondkleur met lichte transparantie */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    display: flex;
+    list-style-type: none; /* Geen opsommingstekens */
+    margin: 0; /* Geen marge */
+    padding: 0; /* Geen opvulling */
+    overflow: visible; /* Dropdowns zichtbaar maken */
+    background-color: rgba(255, 0, 0, 0.614); /* Achtergrondkleur van het menu */
+    position: fixed; /* Menu vastzetten aan de bovenkant van de pagina */
+    top: 0; /* Positie bovenaan */
+    width: 100%; /* Menu neemt de volledige breedte in */
+    z-index: 2; /* Zorgt ervoor dat het menu voor andere elementen staat */
+    display: flex; /* Flexibele opmaak voor het menu */
 }
 
+/* Menu-items */
 .main-menu li {
-    display: inline-block;
-    position: relative; /* Noodzakelijk voor het positioneren van de dropdown-menu's */
-    border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
-    margin-right: 13px;
-    height: 50px;
+    display: inline-block; /* Menu-items naast elkaar plaatsen */
+    position: relative; /* Nodig voor positionering van dropdown-menu's */
+    border-right: 1px solid #bbb; /* Rand tussen menu-items */
+    margin-right: 13px; /* Ruimte tussen de menu-items */
+    height: 50px; /* Hoogte van elk menu-item */
 }
 
 .main-menu li:last-child {
-    border-right: none; /* Geen rechterrand voor het laatste menu-item */
-    margin-right: 0;
+    border-right: none; /* Geen rand voor het laatste menu-item */
+    margin-right: 0; /* Geen marge voor het laatste item */
 }
 
 .main-menu li a {
-    display: block;
+    display: block; /* Blok-element voor hele link */
     color: white; /* Witte tekstkleur */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px; /* Larger font size */
+    text-align: center; /* Tekst centreren in het menu */
+    padding: 14px 16px; /* Binnenmarges voor links */
+    text-decoration: none; /* Verwijder onderlijning van de links */
+    font-size: 18px; /* Grotere lettergrootte */
 }
 
+/* Hover-effect voor niet-actieve links */
 .main-menu li a:hover:not(.active) {
-    background-color: rgba(255, 38, 0, 0.557); /* Rode achtergrondkleur bij hover */
+    background-color: rgba(255, 38, 0, 0.557); /* Achtergrondkleur veranderen bij hover */
 }
 
+/* Stijl voor het actieve menu-item */
 .active {
-    background-color: white; /* Witte achtergrondkleur voor het actieve menu-item */
+    background-color: white; /* Witte achtergrond voor het geselecteerde item */
 }
 
-/* Footer styles */
+/* Voettekst stijlen */
 footer {
-    background-color: rgba(255, 0, 0, 0.614); 
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
+    background-color: rgba(255, 0, 0, 0.614); /* Achtergrondkleur van de voettekst */
+    color: #FFFFFF; /* Witte tekstkleur in de voettekst */
+    padding: 20px; /* Binnenmarge van de voettekst */
+    text-align: center; /* Tekst centreren */
+    font-style: italic; /* Schuine tekststijl */
 }
+
 
 
 
