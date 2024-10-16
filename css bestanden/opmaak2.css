@@ -1,9 +1,8 @@
 ul ul {
     display: none; /* Verberg het dropdownmenu standaard */
     position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
-    background-color: rgba(255, 38, 0, 0); /* Achtergrondkleur van het dropdownmenu */
+    background-color: rgba(255, 38, 0, 0.797); /* Achtergrondkleur van het dropdownmenu */
     padding: 0; /* Geen padding voor het dropdownmenu */
-    width: 100%; /* Zorg ervoor dat het dropdownmenu de volledige breedte gebruikt */
     margin: 0; /* Geen marge voor het dropdownmenu */
     z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
 }
@@ -24,7 +23,6 @@ ul ul li a {
     padding: 10px 15px; /* Padding voor links in het dropdownmenu */
     color: white; /* Kleur voor links in het dropdownmenu */
     text-align: left; /* Align links naar links in het dropdownmenu */
-    border: none; /* Verwijder de rand voor de links in het dropdownmenu */
 }
 
 /* Hover-effect voor links in het dropdownmenu */
