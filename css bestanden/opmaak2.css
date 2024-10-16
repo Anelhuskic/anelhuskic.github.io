@@ -24,6 +24,7 @@ ul ul li a {
     padding: 10px 15px; /* Padding voor links in het dropdownmenu */
     color: white; /* Kleur voor links in het dropdownmenu */
     text-align: left; /* Align links naar links in het dropdownmenu */
+    border: none; /* Verwijder de rand voor de links in het dropdownmenu */
 }
 
 /* Hover-effect voor links in het dropdownmenu */
