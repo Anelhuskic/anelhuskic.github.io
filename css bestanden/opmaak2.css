@@ -1,8 +1,9 @@
 ul ul {
     display: none; /* Verberg het dropdownmenu standaard */
     position: absolute; /* Zorg ervoor dat het dropdownmenu op een absolute positie komt */
-    background-color: rgba(255, 38, 0, 0.557); /* Achtergrondkleur van het dropdownmenu */
+    background-color: rgba(255, 38, 0, 0); /* Achtergrondkleur van het dropdownmenu */
     padding: 0; /* Geen padding voor het dropdownmenu */
+    width: 100%; /* Zorg ervoor dat het dropdownmenu de volledige breedte gebruikt */
     margin: 0; /* Geen marge voor het dropdownmenu */
     z-index: 1; /* Zorg ervoor dat het dropdownmenu boven andere elementen staat */
 }
